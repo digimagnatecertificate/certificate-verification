@@ -1,1 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Certificate Verification</title>
+    <link rel="stylesheet" href="style.css">
+</head>
 
+<body>
+
+<div class="container">
+
+    <div class="header">
+        <h1>Certificate Verification</h1>
+        <p>Verify your certificate using the certificate ID</p>
+    </div>
+
+    <div class="verify-box">
+        <label for="certificateId">Certificate / Student ID</label>
+
+        <div class="search-area">
+            <input
+                type="text"
+                id="certificateId"
+                placeholder="Enter certificate ID"
+            >
+            <button onclick="verifyCertificate()">Verify</button>
+        </div>
+
+        <p id="message"></p>
+    </div>
+
+    <div id="certificateResult" class="certificate-card">
+
+        <div class="verified">
+            ✓ Certificate Verified
+        </div>
+
+        <h2>Certificate Details</h2>
+
+        <div class="details">
+            <div>
+                <span>Full Name</span>
+                <strong id="studentName"></strong>
+            </div>
+
+            <div>
+                <span>Student ID</span>
+                <strong id="studentId"></strong>
+            </div>
+
+            <div>
+                <span>Course Name</span>
+                <strong id="courseName"></strong>
+            </div>
+
+            <div>
+                <span>Date of Start</span>
+                <strong id="startDate"></strong>
+            </div>
+
+            <div>
+                <span>Date of Finish</span>
+                <strong id="finishDate"></strong>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="footer">
+        <p>Certificate Verification Portal</p>
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
