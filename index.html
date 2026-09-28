@@ -3,78 +3,90 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Certificate Verification</title>
+
+    <title>Certificate Verification | DigiMagnate</title>
+
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<div class="container">
+<header class="site-header">
 
-    <div class="header">
-        <h1>Certificate Verification</h1>
-        <p>Verify your certificate using the certificate ID</p>
-    </div>
+    <div class="header-inner">
 
-    <div class="verify-box">
-        <label for="certificateId">Certificate / Student ID</label>
-
-        <div class="search-area">
-            <input
-                type="text"
-                id="certificateId"
-                placeholder="Enter certificate ID"
-            >
-            <button onclick="verifyCertificate()">Verify</button>
+        <div class="logo">
+            <span class="logo-dark">DIGI</span><span class="logo-green">MAGNATE</span><sup>TM</sup>
         </div>
 
-        <p id="message"></p>
+        <div class="header-contact">
+
+            <a href="mailto:info@digimagnate.com">
+                ✉ info@digimagnate.com
+            </a>
+
+            <a href="tel:+918005503075">
+                ☎ +918005503075
+            </a>
+
+            <a class="audit-btn" href="https://digimagnate.com/" target="_blank">
+                Free Website Audit
+            </a>
+
+        </div>
+
     </div>
 
-    <div id="certificateResult" class="certificate-card">
+</header>
+
+
+<main class="main-content">
+
+    <div class="certificate-card">
 
         <div class="verified">
             ✓ Certificate Verified
         </div>
 
-        <h2>Certificate Details</h2>
+        <h1>Certificate Details</h1>
 
         <div class="details">
-            <div>
+
+            <div class="detail-item">
                 <span>Full Name</span>
-                <strong id="studentName"></strong>
+                <strong>Kailash Chand</strong>
             </div>
 
-            <div>
+            <div class="detail-item">
                 <span>Student ID</span>
-                <strong id="studentId"></strong>
+                <strong>DM - 012</strong>
             </div>
 
-            <div>
+            <div class="detail-item">
                 <span>Course Name</span>
-                <strong id="courseName"></strong>
+                <strong>Digital Marketing</strong>
             </div>
 
-            <div>
+            <div class="detail-item">
                 <span>Date of Start</span>
-                <strong id="startDate"></strong>
+                <strong>01 January 2026</strong>
             </div>
 
-            <div>
+            <div class="detail-item">
                 <span>Date of Finish</span>
-                <strong id="finishDate"></strong>
+                <strong>01 April 2026</strong>
             </div>
+
         </div>
 
     </div>
 
-    <div class="footer">
-        <p>Certificate Verification Portal</p>
-    </div>
+</main>
 
-</div>
 
-<script src="script.js"></script>
+<footer class="footer">
+    <p>© 2026 DigiMagnate. All rights reserved.</p>
+</footer>
 
 </body>
 </html>
